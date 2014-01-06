@@ -1,0 +1,12 @@
+{
+    "name": "thenews.im fixes",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["http://thenews.im/"],
+            "css": ["screen.css"],
+            "js": ["jquery-1.10.2.min.js", "main.js"]
+        }
+    ]
+}

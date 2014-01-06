@@ -1,0 +1,56 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.container {
+    min-height: 0 !important;
+    height: 100%;
+    overflow: hidden;
+}
+
+.post-container {
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 20px;
+}
+
+.side {
+    overflow: hidden;
+    padding-top: 100px;
+    left: 0;
+}
+
+.side header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 50% !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+.side + .side header {
+    left: 50%;
+}
+
+.side.right header, .side.right .post .num {
+    background: rgb(232, 75, 0) !important;
+}
+
+.side.right .post .num:visited {
+    background: rgb(232, 117, 63) !important;
+}
+
+#uvTab {
+    display: none !important;
+}
