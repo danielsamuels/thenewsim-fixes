@@ -1,3 +1,4 @@
+/* Use border-box because it's awesome */
 *, *:before, *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -15,6 +16,7 @@ html, body {
     overflow: hidden;
 }
 
+/* Make the post container scroll the posts within. */
 .post-container {
     overflow: auto;
     padding-bottom: 20px;
@@ -29,6 +31,7 @@ html, body {
     margin-top: 100px;
 }
 
+/* Fix the header position to allow the posts to scroll by themselves. */
 .side header {
     position: fixed;
     top: 0;
@@ -41,10 +44,12 @@ html, body {
     transition: none !important;
 }
 
+/* Fix positioning when columns change. */
 .side + .side header {
     left: 50%;
 }
 
+/* Change the Hacker News header to the correct colour. */
 .side.right header, .side.right .post .num {
     background: rgb(232, 75, 0) !important;
 }
